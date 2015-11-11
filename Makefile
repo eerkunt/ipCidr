@@ -12,6 +12,6 @@ test:
 				echo -n "Test #"; \
 				echo -n $${testCount}; \
 				echo -n ": Running with $${CMD} parameter. Expected return code is $${RETURNCODE}..."; \
-				${EXECUTABLE} $${CMD} > /dev/null 2>&1; if [ $$? -eq $${RETURNCODE} ]; then echo "Passed."; else  echo "Failed!"; exit -1; fi \
+				${EXECUTABLE} $${CMD} > /dev/null 2>&1; if [ $$? -eq $${RETURNCODE} ]; then echo "Passed."; else  echo "Returned $$? ! Failed!"; exit -1; fi \
 		 	done
 	@echo "All tests successful."
