@@ -1,4 +1,4 @@
-# ipCidr (https://api.travis-ci.org/eerkunt/ipCidr.svg)
+# ipCidr [![Build Status](https://api.travis-ci.org/eerkunt/ipCidr.png?branch=master)](https://travis-ci.org/eerkunt/ipCidr)
 
 This script converts
 * IP/Netmask to IP/CIDR
