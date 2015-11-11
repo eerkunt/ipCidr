@@ -3,6 +3,7 @@ commands="192.168.0.1/24R1" "192.168.0.0/24R1" "192.168.0.256/24R255" "192.168.0
 EXECUTABLE=./ipCidr.py
 
 test:
+	@chmod +x ${EXECUTABLE}
 	@echo "Running tests."
 	@ testCount=0
 	@-	for i in ${commands}; do										\
