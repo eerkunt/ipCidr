@@ -1,6 +1,6 @@
-# ipCidr
+# ipCidr (https://api.travis-ci.org/eerkunt/ipCidr.svg)
 
-This script converts 
+This script converts
 * IP/Netmask to IP/CIDR
 * IP/CIDR to IP/Netmask
 * IP-Range to IP/CIDR(s)
@@ -36,4 +36,3 @@ $ ./ipCidr.py 192.168.0.1-192.168.0.255
 192.168.0.64/26
 192.168.0.128/25
 ```
-
