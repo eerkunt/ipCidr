@@ -1,4 +1,4 @@
-EXECUTABLE="coverage run python ipCidr.py"
+EXECUTABLE="python ipCidr.py"
 
 commands=("192.168.0.1/24R0" "192.168.0.0/24R0" "192.168.0.256/24R1" "192.168.0.1/33R1" \
 					"192.168.0.2/255.255.255.0R0" "192.168.0.2/255.255.256.0R1" "192.168.256.2/255.255.255.0R1" \
@@ -26,4 +26,3 @@ do
       fi
 done
 if [[ ${FAILED} -gt 0 ]]; then echo "ERROR: ${FAILED} test(s) failed!"; exit 1; else echo "All tests successful."; exit 0; fi
-coverage html
