@@ -1,4 +1,4 @@
-EXECUTABLE="./ipCidr.py"
+EXECUTABLE="python ipCidr.py"
 echo "Making ${EXECUTABLE} executable."
 chmod +x ./ipCidr.py
 
@@ -7,6 +7,7 @@ commands=("192.168.0.1/24R0" "192.168.0.0/24R0" "192.168.0.256/24R1" "192.168.0.
 					"192.168.0.2-192.168.0.255R0" "192.168.0.0-192.168.0.254R0" "192.168.0.256-192.168.0.254R1" )
 testCount=0
 FAILED=0
+
 for i in "${commands[@]}"
 do
 			CMD=`echo $i | cut -d "R" -f1`
